@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---Header---*/
+header {
+  text-align: center;
+  text-transform: uppercase;
+  /*border-bottom: 1px solid grey;*/
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 30px;
+}
+
+header p {
+  font-size: 18px;
+  margin: 30px;
+}
+
+header hr {
+  border-bottom: 2px solid black;
+  width: 35%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: block;
+  text-align: center;
+  list-style: none;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 18px 30px;
+}
+
+header nav a {
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  header hr {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  header nav ul li {
+    padding: 18px 60px;
+  }
+}
+
+/*---Container---*/
+div.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+div.container>div {
+  margin-bottom: 70px;
+}
+
+/*---Slider---*/
+div.slider {
+  max-width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+div.slider img {
+  width: 100%;
+  margin-top: -15%;
+}
+
+/*---Intro---*/
+div.intro {
+  overflow: auto;
+}
+
+div.intro h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+div.intro p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+div.left-column {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+div.right-column {
+  float: left;
+  width: 50%;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  div.left-column {
+    width: 50%;
+    padding-right: 40px;
+  }
+
+  div.right-column {
+    display: block;
+  }
+}
+
+/*---kitchens---*/
+div.country-kitchens h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+div.country-kitchens .images {
+  display: flex;
+  flex-flow: row wrap;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -moz-flex;
+  -moz-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+div.country-kitchens .images .kitchen {
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+}
+
+div.country-kitchens .images img {
+  border-radius: 50%;
+  width: 320px;
+  opacity: 0.3;
+  transition: 0.4s opacity;
+}
+
+div.country-kitchens .images .kitchen h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 35px;
+  width: 100%;
+  color: black;
+  transition: 0.65s opacity;
+}
+
+div.country-kitchens .images .kitchen:hover img {
+  opacity: 1;
+}
+
+div.country-kitchens .images .kitchen:hover h3 {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  div.country-kitchens h2 {
+    display: none;
+  }
+}
+
+/*---Footer---*/
+footer {
+  background-color: lightgrey;
+  padding: 40px;
+  overflow: hidden;
+}
+
+footer .footer-info {
+  float: left;
+}
+
+footer .footer-info p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+footer .footer-social-media {
+  float: right;
+  width: 32px;
+}
+
+footer .footer-social-media img {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
